@@ -28,6 +28,7 @@ from .pointnet_modules import (PAConvCUDASAModule, PAConvCUDASAModuleMSG,
                                build_sa_module)
 from .sparse_block import (SparseBasicBlock, SparseBottleneck,
                            make_sparse_convmodule)
+from .rotated_iou import cal_iou_3d, cal_giou_3d
 
 __all__ = [
     'nms', 'soft_nms', 'RoIAlign', 'roi_align', 'get_compiler_version',
