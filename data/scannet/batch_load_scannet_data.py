@@ -103,8 +103,9 @@ def batch_export(max_num_point,
         try:
             export_one_scan(scan_name, output_filename_prefix, max_num_point,
                             label_map_file, scannet_dir, test_mode)
-        except Exception:
+        except Exception as e:
             print(f'Failed export scan: {scan_name}')
+            print(str(e))
         print('-' * 20 + 'done')
 
 

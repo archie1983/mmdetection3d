@@ -15,6 +15,7 @@ from .shape_aware_head import ShapeAwareHead
 from .smoke_mono3d_head import SMOKEMono3DHead
 from .ssd_3d_head import SSD3DHead
 from .vote_head import VoteHead
+from .fcaf3d_neck_with_head import Fcaf3DNeckWithHead, Fcaf3DAssigner
 
 __all__ = [
     'Anchor3DHead', 'FreeAnchor3DHead', 'PartA2RPNHead', 'VoteHead',
